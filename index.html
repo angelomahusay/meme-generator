@@ -6,18 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./img/src/styles.css">
   <link rel="icon" href="https://vercel.com/favicon.ico" />
-  <title>Meme Generator</title>
+  <title>Paws & Laughs</title>
 </head>
 
 <body>
   <div class="main-container">
-    <p class="title-name">Meme Generator</p>
-    <div>
-      <div id="image-container"></div>
+    <p class="title-name">Paws & Laughs</p>
+    <div class="qoute-container">
+      <h2 class="quote-title">Quote of the day</h2>
+      <p class="quote"><span class="click">Click the button </span>to generate a quote</p>
+      <p class="author"></p>
     </div>
-    <button id="bot-btn">Generate Meme</button>
+    <div>
+      <div id="image-container"></div>/
+    </div>
+
+    <div class="btn-container">
+      <button id="dog-btn">Generate Dog</button>
+      <button id="cat-btn">Generate Cat</button>
+    </div>
+    <div class="btn-container">
+      <button id="quote-btn" onclick="fetchQuote()">Generate Quote</button>
+      <button id="meme-btn">Generate Meme</button>
+    </div>
+
     <p class="created-by">Created by: <span id="created-name">Angelo M. Mahusay - BSIT 2A</span></p>
   </div>
+
   <script src="img/src/script.js"></script>
 </body>
 
